@@ -4,6 +4,14 @@
         <h1>Compose Mail</h1>
         <form (ngSubmit)="doSubmitForm()">
 
+          <mat-form-field class="field" appearance="outline">
+            <mat-label>From</mat-label>
+            <input name="to" [(ngModel)]="data.to" matInput>
+          </mat-form-field>
+          <mat-form-field class="field" appearance="outline">
+            <mat-label>apppassword</mat-label>
+            <input name="to" [(ngModel)]="data.to" matInput>
+          </mat-form-field>
         <mat-form-field class="field" appearance="outline">
             <mat-label>To</mat-label>
             <input name="to" [(ngModel)]="data.to" matInput>
