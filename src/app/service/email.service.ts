@@ -13,4 +13,3 @@ export class EmailService {
     return this.http.post(`${this.baseUrl}/sendemail`,data)
   }
 }
-//iwtu nncl jatz dmph
