@@ -17,6 +17,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 })
 export class EmailComponent {
 data={
+  from:"",
+  apppassword:"",
 to:"",
 subject:"",
 message:""
@@ -28,10 +30,12 @@ flag:boolean=false;
   doSubmitForm(){
     console.log("try to submit form");
 
+    console.log(this.data.from)
+    console.log(this.data.apppassword)
     console.log(this.data.to)
     console.log(this.data.subject)
     console.log(this.data.message)
-    if(this.data.to=='' || this.data.subject=='' || this.data.message==''){
+    if(this.data.from=='' ||this.data.apppassword=='' ||this.data.to=='' || this.data.subject=='' || this.data.message==''){
       this.snak.open("fields can not be empty!!", "Ok");
       return ;
     }
