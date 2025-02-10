@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class EmailService {
-  private baseUrl:String="http://localhost:8282"
+  private baseUrl:String="https://emailapi-seven.vercel.app"
   constructor(private http:HttpClient) { }
   sendEmail(data:any){
     // return this.http.post(`${this.baseUrl}/sendemail`,data)
@@ -13,3 +13,4 @@ export class EmailService {
     return this.http.post(`${this.baseUrl}/sendemail`,data)
   }
 }
+//iwtu nncl jatz dmph
